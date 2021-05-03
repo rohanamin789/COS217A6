@@ -109,3 +109,17 @@ Epilog and return 0
 0x400890 <main+112>: ldp     x19, x30, [sp]
 0x400894 <main+116>: add     sp, sp, #0x10
 0x400898 <main+120>: ret
+
+
+
+Data
+
+Address (in hex)  |  Content (in hex)  |  Description
+---------------------------------------------------------------
+0x420044          |  0x00000044	       | grade = 'D'
+
+BSS
+
+Address (in hex)  |  Description
+---------------------------------------------------------------
+0x420058	  |  Pointer to name[0]
