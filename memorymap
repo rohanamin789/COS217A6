@@ -174,8 +174,17 @@ Address (in hex)  |  Description
 Stack
 Offset            |  Description
 ---------------------------------------------------------------
-0                 |  x19
-8                 |  x20
-16                |  x21
-24                |  x30
-32                |  buf array
+0                 |  X19 (readString Prolog)
+8                 |  X20 (readString Prolog)
+16                |  X21 (readString Prolog)
+24                |  X30 (readString Prolog)
+32                |  buf
+40                |  buf
+48                |  buf
+56                |  buf
+64                |  buf
+72                |  buf
+80                |  X30 (getName Prolog)
+88                |  Not used
+96                |  X19 (main Prolog)
+104               |  X30 (main Prolog)
