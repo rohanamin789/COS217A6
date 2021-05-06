@@ -20,14 +20,14 @@ static void setField(unsigned int uiSrc, int iSrcStartBit,
    unsigned int mask = 1;
    int i;
 
-   // create a mask that is iNumBits long.
+   /* create a mask that is iNumBits long. */
    for (i = 0; i < iNumBits; i++) {
       mask = mask * 2;
    }
    mask--; 
 
-   // right-shift to start at iSrcStartBit, apply mask, then left-shift 
-   // to iDestStartBit. Or to set new bits.
+   /* right-shift to start at iSrcStartBit, apply mask, then left-shift 
+      to iDestStartBit. Or to set new bits. */
    uiSrc = uiSrc >> iSrcStartBit;
    uiSrc = uiSrc & mask;
    uiSrc = uiSrc << iDestStartBit;
