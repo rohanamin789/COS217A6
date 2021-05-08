@@ -120,56 +120,56 @@ Address (in hex)  |  Content (in hex)  |  Description
 
 BSS
 
-Address (in hex)  |  Description
+Address (in hex)  |  Description (A-Attack)           
 ---------------------------------------------------------------
-0x420058	      |  Pointer to name[0]
-0x420059	      |  Pointer to name[1]
-0x42005a	      |  Pointer to name[2]
-0x42005b	      |  Pointer to name[3]
-0x42005c	      |  Pointer to name[4]
-0x42005d          |  Pointer to name[5]
-0x42005e	      |  Pointer to name[6]
-0x42005f	      |  Pointer to name[7]
-0x420060	      |  Pointer to name[8]
-0x420061	      |  Pointer to name[9]
-0x420062	      |  Pointer to name[10]
-0x420063	      |  Pointer to name[11]
-0x420064	      |  Pointer to name[12]
-0x420065	      |  Pointer to name[13]
-0x420066	      |  Pointer to name[14]
-0x420067	      |  Pointer to name[15]
-0x420068	      |  Pointer to name[16]
-0x420069	      |  Pointer to name[17]
-0x42006a	      |  Pointer to name[18]
-0x42006b	      |  Pointer to name[19]
-0x42006c	      |  Pointer to name[20]
-0x42006d	      |  Pointer to name[21]
-0x42006e	      |  Pointer to name[22]
-0x42006f	      |  Pointer to name[23]
-0x420070	      |  Pointer to name[24]
-0x420071	      |  Pointer to name[25]
-0x420072	      |  Pointer to name[26]
-0x420073	      |  Pointer to name[27]
-0x420074	      |  Pointer to name[28]
-0x420075	      |  Pointer to name[29]
-0x420076	      |  Pointer to name[30]
-0x420077	      |  Pointer to name[31]
-0x420078	      |  Pointer to name[32]
-0x420079	      |  Pointer to name[33]
-0x42007a	      |  Pointer to name[34]
-0x42007b	      |  Pointer to name[35]
-0x42007c	      |  Pointer to name[36]
-0x42007d	      |  Pointer to name[37]
-0x42007e	      |  Pointer to name[38]
-0x42007f	      |  Pointer to name[39]
-0x420080	      |  Pointer to name[40]
-0x420081	      |  Pointer to name[41]
-0x420082	      |  Pointer to name[42]
-0x420083	      |  Pointer to name[43]
-0x420084	      |  Pointer to name[44]
-0x420085	      |  Pointer to name[45]
-0x420086	      |  Pointer to name[46]
-0x420087	      |  Pointer to name[47]
+0x420058	      |  name[0] = 'R'     
+0x420059	      |  name[1] = 'o'
+0x42005a	      |  name[2] = 'h'
+0x42005b	      |  name[3] = 'a'
+0x42005c	      |  name[4] = 'n'
+0x42005d          |  name[5] = ' '
+0x42005e	      |  name[6] = 'A'
+0x42005f	      |  name[7] = 'l'
+0x420060	      |  name[8] = 'e'
+0x420061	      |  name[9] = 'x'
+0x420062	      |  name[10] = '\0'
+0x420063	      |  name[11] = '\0'
+0x420064	      |  name[12] = '\0'
+0x420065	      |  name[13] = '\0'
+0x420066	      |  name[14] = '\0'
+0x420067	      |  name[15] = '\0'
+0x420068	      |  name[16] = '\0'
+0x420069	      |  name[17] = '\0'
+0x42006a	      |  name[18] = '\0'
+0x42006b	      |  name[19] = '\0'
+0x42006c	      |  name[20] = '\0'
+0x42006d	      |  name[21] = '\0'
+0x42006e	      |  name[22] = '\0'
+0x42006f	      |  name[23] = '\0'
+0x420070	      |  name[24] = '\0'
+0x420071	      |  name[25] = '\0'
+0x420072	      |  name[26] = '\0'
+0x420073	      |  name[27] = '\0'
+0x420074	      |  name[28] = '\0'
+0x420075	      |  name[29] = '\0'
+0x420076	      |  name[30] = '\0'
+0x420077	      |  name[31] = '\0'
+0x420078	      |  name[32] = mov x0, 'A'
+0x420079	      |  name[33] = mov x0, 'A'
+0x42007a	      |  name[34] = mov x0, 'A'
+0x42007b	      |  name[35] = mov x0, 'A'
+0x42007c	      |  name[36] = adr x1, 0x420044 (grade)
+0x42007d	      |  name[37] = adr x1, 0x420044 (grade)
+0x42007e	      |  name[38] = adr x1, 0x420044 (grade)
+0x42007f	      |  name[39] = adr x1, 0x420044 (grade)
+0x420080	      |  name[40] = str x0, [x1]
+0x420081	      |  name[41] = str x0, [x1]
+0x420082	      |  name[42] = str x0, [x1]
+0x420083	      |  name[43] = str x0, [x1]
+0x420084	      |  name[44] = b 0x400864 (print statement)
+0x420085	      |  name[45] = b 0x400864 (print statement)
+0x420086	      |  name[46] = b 0x400864 (print statement)
+0x420087	      |  name[47] = b 0x400864 (print statement)
 
 Stack
 Offset            |  Description
