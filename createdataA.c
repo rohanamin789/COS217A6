@@ -1,6 +1,6 @@
 /* Authors: Rohan Amin and Alex Luo 
    createdataA.c */
-#include <stdlib.io>
+#include <stdio.h>
 #include "miniassembler.h"
 
 int main(void) {
@@ -16,9 +16,9 @@ int main(void) {
    
    mov = MiniAssembler_mov(0, 'A');
    adr = MiniAssembler_adr(1,0x420044,0x42007c) ;
-   strb = MiniAssembeler_strb(0, 1); 
+   strb = MiniAssembler_strb(0, 1); 
    branch = MiniAssembler_b(0x400864,0x420084);
-   movLocation = 0x420078
+   movLocation = 0x420078;
    fwrite(&mov, sizeof(unsigned int), 1, psFile);
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
    fwrite(&strb, sizeof(unsigned int), 1, psFile);
