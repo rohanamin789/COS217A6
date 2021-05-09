@@ -100,7 +100,7 @@ unsigned int MiniAssembler_strb(unsigned int uiFromReg,
 unsigned int MiniAssembler_b(unsigned long ulAddr,
    unsigned long ulAddrOfThisInstr)
 {
-   /* Your code here */
+   
    unsigned int uiInstr;
    unsigned int uiDisp;
 
@@ -121,7 +121,7 @@ unsigned int MiniAssembler_b(unsigned long ulAddr,
 unsigned int MiniAssembler_bl(unsigned long ulAddr,
    unsigned long ulAddrOfThisInstr)
 {
-   /* Your code here */
+  
    unsigned int uiInstr;
    unsigned int uiDisp;
 
