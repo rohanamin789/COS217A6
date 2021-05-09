@@ -8,7 +8,7 @@ Alex Luo
 ------------------------------------------------------------------------
 Student 2: What is your name?
 
-Rohan
+Rohan Amin
 
 ------------------------------------------------------------------------
 How many late days are you using on this assignment?
@@ -107,6 +107,10 @@ machine code in one of the linked textbooks.
 Student 2: What is your assessment of the assignment? Was it helpful?
 Was it fun?
 
+The assignment was much more interesting and helpful conceptually than
+others. I think I learned the fundamnetals of buffer overflow attacks,
+memory maps, and stack frames and how they interact in a given process
+in a way that I hadn't known before. 
 
 
 ------------------------------------------------------------------------
