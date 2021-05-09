@@ -15,7 +15,7 @@ int main(void) {
    fputs("A+",psFile);
    putc('\0', psFile);
 
-   for (i = 0; i < 3; i++)
+   for (i = 0; i < 15; i++)
       putc('\0', psFile);
 
    mov = MiniAssembler_mov(1, 's');
