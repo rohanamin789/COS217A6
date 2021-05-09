@@ -3,18 +3,18 @@ Assignment 6 readme File
 ------------------------------------------------------------------------
 Student 1: What is your name?
 
-
+Alex Luo
 
 ------------------------------------------------------------------------
 Student 2: What is your name?
 
-
+Rohan
 
 ------------------------------------------------------------------------
 How many late days are you using on this assignment?
 (Reminder, you may use at most 1, and that only takes you until 23:59)
 
-
+0
 
 ------------------------------------------------------------------------
 Student 1: What authorized sources of information did you use to
@@ -22,7 +22,21 @@ complete the assignment? COPY THE LIST of authorized sources of
 information given in the "Policies" web page to this section of the
 readme file, and edit it as appropriate.
 
+The course's lectures.
 
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website. Such documents include the course's lecture slides and precept handouts.
+
+The course's textbooks.
+
+The course's current staff members outside of class time through office hours.
+
+The course's current staff members outside of class time through Ed.
+
+* Google, when allowed for Step 1 (Legal Matters)
 
 ------------------------------------------------------------------------
 Student 2: What authorized sources of information did you use to
@@ -30,7 +44,21 @@ complete the assignment? COPY THE LIST of authorized sources of
 information given in the "Policies" web page to this section of the
 readme file, and edit it as appropriate.
 
+The course's lectures.
 
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website. Such documents include the course's lecture slides and precept handouts.
+
+The course's textbooks.
+
+The course's current staff members outside of class time through office hours.
+
+The course's current staff members outside of class time through Ed.
+
+* Google, when allowed for Step 1 (Legal Matters)
 
 ------------------------------------------------------------------------
 Student 1: What unauthorized sources of information did you use to
@@ -44,7 +72,7 @@ nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
 
-
+None
 
 ------------------------------------------------------------------------
 Student 2: What unauthorized sources of information did you use to
@@ -58,13 +86,22 @@ nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
 
-
+None
 
 ------------------------------------------------------------------------
 Student 1: What is your assessment of the assignment? Was it helpful?
 Was it fun?
 
-
+This assignment was much more fun and helpful than the last one on 
+assembly language. I got to understand vulnerabilities in machine code 
+as well has how to write machine code myself, and figuring out the 
+challenge portion was fun. However, it would have been much more helpful
+if the ARM machine language base instructions manual was easier to find.
+We had originally thought of a way to solve A+ using a bl method, which
+is how we eventually did solve the challenge, but we couldn't find any 
+reference to bl machine code in lectures or precept handouts, and only
+after being unable to solve A+ using other methods did we find the 
+machine code in one of the linked textbooks.
 
 ------------------------------------------------------------------------
 Student 2: What is your assessment of the assignment? Was it helpful?

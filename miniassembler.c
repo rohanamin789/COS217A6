@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------------*/
 /* miniassembler.c                                                    */
 /* Author: Bob Dondero, Donna Gabai                                   */
+/* Edited by Alex Luo and Rohan Amin                                  */
 /*--------------------------------------------------------------------*/
 
 #include "miniassembler.h"
@@ -82,7 +83,6 @@ unsigned int MiniAssembler_adr(unsigned int uiReg, unsigned long ulAddr,
 unsigned int MiniAssembler_strb(unsigned int uiFromReg,
    unsigned int uiToReg)
 {
-   /* Your code here */
    unsigned int uiInstr;
 
    /* Base Instruction Code */

@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------------*/
 /* miniassembler.h                                                    */
 /* Author: Bob Dondero, Donna Gabai                                   */
+/* Edited by Alex Luo and Rohan Amin                                  */
 /*--------------------------------------------------------------------*/
 
 #ifndef MINIASSEMBLER_INCLUDED
