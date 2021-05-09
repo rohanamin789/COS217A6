@@ -6,7 +6,7 @@
 int main(void) {
    FILE *psFile;
    int i;
-   unsigned int mov, adr, strb, branch, adr2;
+   unsigned int mov, adr, branch;
    unsigned long movLocation;
    psFile = fopen("dataAplus", "w");
    fputs("Rolex",psFile);   
