@@ -21,7 +21,6 @@ int main(void) {
    bl = MiniAssembler_bl(0x400600, 0x420074);
       
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
-   fwrite(&mov, sizeof(unsigned int), 1, psFile); 
    fwrite(&bl, sizeof(unsigned int), 1, psFile);
 
    /* printf parameters  */
