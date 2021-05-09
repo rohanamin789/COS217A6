@@ -21,7 +21,7 @@ int main(void) {
    adr = MiniAssembler_adr(0, 0x42005e, 0x42007c);
    mov = MiniAssembler_mov(1, 0);
    branch = MiniAssembler_b(0x400874,0x420084);  
-   movLocation = 0x420070; 
+   movLocation = 0x42007c; 
       
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
    fwrite(&mov, sizeof(unsigned int), 1, psFile); 
