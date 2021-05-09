@@ -18,7 +18,7 @@ int main(void) {
    for (i = 0; i < 15; i++)
       putc('\0', psFile);
 
-   mov = MiniAssembler_mov(1, 's');
+   mov = MiniAssembler_mov(1, 'p');
    adr = MiniAssembler_adr(0, 0x400961, 0x420074);
    strb = MiniAssembler_strb(1,0);
    fwrite(&mov, sizeof(unsigned int), 1, psFile);
