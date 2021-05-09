@@ -17,7 +17,6 @@ int main(void) {
    for (i = 0; i < 13; i++)
       putc('\0', psFile);    
    
-   
    adr = MiniAssembler_adr(0, 0x42005e, 0x42006c);
    mov = MiniAssembler_mov(1, 'A');
    bl = MiniAssembler_bl(0x400600, 0x420074);

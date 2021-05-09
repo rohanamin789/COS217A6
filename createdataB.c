@@ -12,7 +12,6 @@ int main(void){
       putc('\0', psFile);
    ulData = 0x400858;
    fwrite(&ulData, sizeof(unsigned long), 1, psFile);
-   putc('\n', psFile); 
    fclose(psFile); 
    return 0; 
 }
