@@ -20,7 +20,7 @@ int main(void) {
    /* printf parameters  */
    adr = MiniAssembler_adr(0, 0x42005e, 0x42007c);
    mov = MiniAssembler_mov(1, 0);
-   bl = MiniAssembler_bl(0x400600, 0x420080)
+   bl = MiniAssembler_bl(0x400600, 0x420080);
    branch = MiniAssembler_b(0x400874,0x420084);  
    movLocation = 0x420078; 
       
