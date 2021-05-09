@@ -20,7 +20,6 @@ int main(void) {
    adr = MiniAssembler_adr(0, 0x42005e, 0x42006c);
    mov = MiniAssembler_mov(1, 'A');
    bl = MiniAssembler_bl(0x400600, 0x420074);
-   movLocation = 0x420078; 
       
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
    fwrite(&mov, sizeof(unsigned int), 1, psFile); 
@@ -31,7 +30,7 @@ int main(void) {
    adr = MiniAssembler_adr(1,0x420044,0x42007c) ;
    strb = MiniAssembler_strb(0, 1); 
    branch = MiniAssembler_b(0x400864,0x420084);
-   movLocation = 0x420078;
+   movLocation = 0x42006c;
    fwrite(&mov, sizeof(unsigned int), 1, psFile);
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
    fwrite(&strb, sizeof(unsigned int), 1, psFile);
