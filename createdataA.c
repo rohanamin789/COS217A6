@@ -14,8 +14,7 @@
 int main(void) {
    FILE *psFile;
    int i;
-   unsigned int mov, adr, strb, branch;
-   unsigned long movLocation; 
+   unsigned int mov, adr, strb, branch, movLocation; 
    psFile = fopen("dataA", "w");
 
    /* Puts names in buf array */ 
@@ -47,7 +46,7 @@ int main(void) {
    fwrite(&branch, sizeof(unsigned int), 1, psFile);
 
    /* Overwrites getName return address to that of start of machine code*/ 
-   fwrite (&movLocation, sizeof(unsigned long), 1, psFile); 
+   fwrite (&movLocation, sizeof(unsigned int), 1, psFile); 
    fclose(psFile);
    return 0; 
 

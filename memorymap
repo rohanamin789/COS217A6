@@ -131,7 +131,7 @@ Address (in hex)  |  Description (A-Attack)
 0x42005a	      |  name[2] = 'h'
 0x42005b	      |  name[3] = 'a'
 0x42005c	      |  name[4] = 'n'
-0x42005d          |  name[5] = ' '
+0x42005d              |  name[5] = ' '
 0x42005e	      |  name[6] = 'A'
 0x42005f	      |  name[7] = 'l'
 0x420060	      |  name[8] = 'e'

